@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Guven a pile of coins of different values, this script
+'''Given a pile of coins of different values, this script
 finds the fewest number of coins needed to meet the total amount given'''
 
 
@@ -9,6 +9,8 @@ def makeChange(coins, total):
     Returns -1 if total cannot be met by any number of coins in posession'''
     if 0 > total or total == 0:
         return 0
+    if coins == []:
+        return -1
     coin_count = 1
     max_value = max(coins)
     current_sum = max_value
