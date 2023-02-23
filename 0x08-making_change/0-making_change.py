@@ -11,6 +11,10 @@ def makeChange(coins, total):
         return 0
     if coins == []:
         return -1
+    if type(coins) != list:
+        return -1
+    if type(total) != int:
+        return 0
     coin_count = 1
     max_value = max(coins)
     current_sum = max_value
