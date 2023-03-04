@@ -8,7 +8,7 @@ def island_perimeter(grid):
     '''This function finds the perimeter of
        a given island with its shape represented by 1's
        in a list'''
-    if grid == []:
+    if grid == [] or type(grid) != list:
         return 0
     list_len = len(grid)
     row_len = len(grid[0])
